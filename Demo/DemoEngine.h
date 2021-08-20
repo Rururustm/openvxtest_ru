@@ -41,7 +41,7 @@ typedef std::unique_ptr<IDemoCase> IDemoCasePtr;
 IDemoCasePtr CreateThresholdingDemo();
 
 /// TODO: add your demos here
-
+IDemoCasePtr CreateConvexHullDemo();
 ///////////////////////////////////////////////////////////////////////////////
 
 ///@class Provide showing demo
@@ -57,8 +57,10 @@ public:
     ///@brief ctor
     DemoEngine()
     {
+        m_demoRegistry.push_back(CreateConvexHullDemo());
         m_demoRegistry.push_back(CreateThresholdingDemo());
         // TODO: add your demos here
+
     }
 
     ///@brief Execute demos

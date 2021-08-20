@@ -48,7 +48,8 @@
 vx_status ref_Threshold(const vx_image src_image, vx_image dst_image, const vx_threshold thresh);
 
 ///////////////////////////////////////////////////////////////////////////////
-
+vx_status ref_ConvexHull(const vx_image src_image,
+    vx_coordinates2d_t* dst, size_t* dst_size);
 /*
     Function: ref_ConnectedComponentsLabeling
 
