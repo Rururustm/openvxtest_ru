@@ -1,0 +1,9 @@
+# User-specific files
+*.suo
+*.user
+*.sdf
+*.opensdf
+
+Debug/
+Release/
+build/
